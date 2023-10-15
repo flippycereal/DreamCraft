@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "dreamcraftmod",
+  "version": "${version}",
+  "name": "DreamCraft",
+  "description": "",
+  "authors": [
+    "BrodieBroadcasts"
+  ],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/dreamcraftmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.flippycereal.dreamcraftmod.client.DreamCraftClient"
+    ],
+    "main": [
+      "net.flippycereal.dreamcraftmod.DreamCraft"
+    ]
+  },
+  "mixins": [
+    "dreamcraftmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
