@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "dreamcraftmod:block/pink_ivory_planks"
+  }
+}

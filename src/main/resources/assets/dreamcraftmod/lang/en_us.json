@@ -1,3 +1,34 @@
 {
-  "item.dreamcraftmod.sand_sword" : "Sand Sword"
+  "item.dreamcraftmod.sand_sword" : "Sand Sword",
+  "item.dreamcraftmod.echo_longsword" : "Echo Longsword",
+  "item.dreamcraftmod.gay_comb": "Gay Comb",
+  "item.dreamcraftmod.handle": "Handle",
+  "item.dreamcraftmod.pride_scythe": "Pride Scythe",
+
+  "block.dreamcraftmod.pride_ore": "Pride Ore",
+  "block.dreamcraftmod.pride_block": "Pride Block",
+
+
+  "block.dreamcraftmod.white_oak_log": "White Oak Log",
+  "block.dreamcraftmod.white_oak_wood": "White Oak Wood",
+  "block.dreamcraftmod.stripped_white_oak_log": "Stripped White Oak Log",
+  "block.dreamcraftmod.stripped_white_oak_wood": "Stripped White Oak Wood",
+  "block.dreamcraftmod.white_oak_leaves": "White Oak Leaves",
+  "block.dreamcraftmod.white_oak_planks": "White Oak Planks",
+
+  "block.dreamcraftmod.pink_ivory_log": "Pink Ivory Log",
+  "block.dreamcraftmod.pink_ivory_wood": "Pink Ivory Wood",
+  "block.dreamcraftmod.pink_ivory_planks": "Pink Ivory Planks",
+
+  "block.dreamcraftmod.pink_ivory_stairs": "Pink Ivory Stairs",
+  "block.dreamcraftmod.pink_ivory_slab": "Pink Ivory Slab",
+  "block.dreamcraftmod.pink_ivory_button": "Pink Ivory Button",
+  "block.dreamcraftmod.pink_ivory_pressure_plate": "Pink Ivory Pressure Plate",
+  "block.dreamcraftmod.pink_ivory_fence": "Pink Ivory Fence",
+  "block.dreamcraftmod.pink_ivory_fence_gate": "Pink Ivory Fence Gate",
+  "block.dreamcraftmod.pink_ivory_wall": "Pink Ivory Wall",
+  "block.dreamcraftmod.pink_ivory_door": "Pink Ivory Door",
+  "block.dreamcraftmod.pink_ivory_trapdoor": "Pink Ivory Trapdoor",
+
+  "itemgroup.dreamcraft": "DreamCraft"
 }

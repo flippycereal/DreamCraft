@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "dreamcraftmod:block/pink_ivory_door_bottom",
+    "top": "dreamcraftmod:block/pink_ivory_door_top"
+  }
+}

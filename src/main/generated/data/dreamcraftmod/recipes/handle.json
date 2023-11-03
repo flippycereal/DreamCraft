@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "B#B"
+  ],
+  "result": {
+    "item": "dreamcraftmod:handle"
+  },
+  "show_notification": true
+}

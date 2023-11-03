@@ -17,6 +17,12 @@
     ],
     "main": [
       "net.flippycereal.dreamcraftmod.DreamCraft"
+    ],
+    "fabric-datagen": [
+      "net.flippycereal.dreamcraftmod.DreamCraftDataGenerator"
+    ],
+    "rei_client": [
+      "net.flippycereal.dreamcraftmod.compat.DreamCraftREIClientPlugin"
     ]
   },
   "mixins": [

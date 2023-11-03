@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "dreamcraftmod:block/pink_ivory_planks"
+  }
+}

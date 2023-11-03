@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:echo_shard"
+    },
+    "D": {
+      "item": "minecraft:deepslate"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "  #",
+    "G# ",
+    "DG "
+  ],
+  "result": {
+    "item": "dreamcraftmod:echo_longsword"
+  },
+  "show_notification": true
+}

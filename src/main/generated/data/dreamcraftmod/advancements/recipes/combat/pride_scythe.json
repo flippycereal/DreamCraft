@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gay_comb": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dreamcraftmod:gay_comb"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:pride_scythe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gay_comb"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:pride_scythe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

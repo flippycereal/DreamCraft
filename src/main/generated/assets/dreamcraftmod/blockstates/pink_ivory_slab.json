@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dreamcraftmod:block/pink_ivory_slab"
+    },
+    "type=double": {
+      "model": "dreamcraftmod:block/pink_ivory_planks"
+    },
+    "type=top": {
+      "model": "dreamcraftmod:block/pink_ivory_slab_top"
+    }
+  }
+}

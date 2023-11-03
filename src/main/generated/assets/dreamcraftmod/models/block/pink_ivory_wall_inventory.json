@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "dreamcraftmod:block/pink_ivory_planks"
+  }
+}

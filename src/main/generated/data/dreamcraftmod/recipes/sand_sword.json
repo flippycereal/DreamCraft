@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:sand"
+    },
+    "B": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "B"
+  ],
+  "result": {
+    "item": "dreamcraftmod:sand_sword"
+  },
+  "show_notification": true
+}

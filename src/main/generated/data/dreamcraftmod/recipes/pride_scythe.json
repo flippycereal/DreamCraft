@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "dreamcraftmod:gay_comb"
+    },
+    "B": {
+      "item": "dreamcraftmod:pride_block"
+    },
+    "H": {
+      "item": "dreamcraftmod:handle"
+    }
+  },
+  "pattern": [
+    "B##",
+    " H#",
+    "H  "
+  ],
+  "result": {
+    "item": "dreamcraftmod:pride_scythe"
+  },
+  "show_notification": true
+}

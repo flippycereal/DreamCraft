@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "dreamcraftmod:block/pink_ivory_planks",
+    "side": "dreamcraftmod:block/pink_ivory_planks",
+    "top": "dreamcraftmod:block/pink_ivory_planks"
+  }
+}

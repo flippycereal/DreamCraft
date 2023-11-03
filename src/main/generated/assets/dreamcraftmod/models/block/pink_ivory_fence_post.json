@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "dreamcraftmod:block/pink_ivory_planks"
+  }
+}
