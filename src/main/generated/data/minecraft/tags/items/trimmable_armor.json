@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dreamcraftmod:mistium_helmet",
+    "dreamcraftmod:mistium_chestplate",
+    "dreamcraftmod:mistium_leggings",
+    "dreamcraftmod:mistium_boots"
+  ]
+}

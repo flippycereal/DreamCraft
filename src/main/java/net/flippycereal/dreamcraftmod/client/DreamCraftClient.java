@@ -15,12 +15,6 @@ public class DreamCraftClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
 
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_IVORY_DOOR, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PINK_IVORY_TRAPDOOR, RenderLayer.getCutout());
-
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WHITE_OAK_LEAVES, RenderLayer.getCutout());
-
-        ParticleFactoryRegistry.getInstance().register(ModParticles.ECHO_SWEEP_ATTACK, EchoSweepParticle.Factory::new);
-
     }
 }

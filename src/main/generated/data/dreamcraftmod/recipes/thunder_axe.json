@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "dreamcraftmod:thunder"
+    }
+  },
+  "pattern": [
+    " MM",
+    " #M",
+    " # "
+  ],
+  "result": {
+    "item": "dreamcraftmod:thunder_axe"
+  },
+  "show_notification": true
+}

@@ -8,13 +8,16 @@
     "D": {
       "item": "minecraft:deepslate"
     },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
     "G": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:gold_block"
     }
   },
   "pattern": [
-    "  #",
-    "G# ",
+    " E#",
+    "G#E",
     "DG "
   ],
   "result": {

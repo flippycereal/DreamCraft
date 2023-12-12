@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "dreamcraftmod:echo_blade"
+    },
+    "D": {
+      "item": "dreamcraftmod:shaft"
+    },
+    "G": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "pattern": [
+    "  #",
+    " DG",
+    "D  "
+  ],
+  "result": {
+    "item": "dreamcraftmod:echo_glaive"
+  },
+  "show_notification": true
+}

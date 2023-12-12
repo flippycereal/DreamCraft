@@ -58,6 +58,5 @@ public abstract class BipedEntityModelMixin<T extends LivingEntity> extends Anim
             modelPart.yaw += this.body.yaw * 2.0f;
             modelPart.roll += MathHelper.sin(this.handSwingProgress * 3.1415927F) * -0.4f;
         }
-
     }
 }

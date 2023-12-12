@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "dreamcraftmod:item/echo_blade"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [46.25, 90, 0],
+			"translation": [0, 1.25, 0.25]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [46.25, -90, 0],
+			"translation": [0, 1.25, 0.25]
+		},
+		"firstperson_righthand": {
+			"rotation": [26.25, 90, 0],
+			"translation": [3, 1.75, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [26.25, -90, 0],
+			"translation": [3, 1.75, 0]
+		},
+		"gui": {
+			"scale": [1.5, 1.5, 1]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"scale": [1.5, 1.5, 1]
+		}
+	}
+}

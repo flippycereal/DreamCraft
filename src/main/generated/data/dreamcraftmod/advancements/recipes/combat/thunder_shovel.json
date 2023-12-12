@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:thunder_shovel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_thunder_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dreamcraftmod:thunder_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_thunder_shovel"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:thunder_shovel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

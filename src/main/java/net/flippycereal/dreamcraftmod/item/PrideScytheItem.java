@@ -4,6 +4,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -21,6 +22,7 @@ public class PrideScytheItem extends SwordItem {
 
     private static Random random = new Random();
 
+
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         user.getItemCooldownManager().set(this, 120);
@@ -37,6 +39,6 @@ public class PrideScytheItem extends SwordItem {
             }
             return TypedActionResult.pass(user.getStackInHand(hand));
         }
-        return null;
+        return TypedActionResult.success(user.getStackInHand(hand));
     }
 }

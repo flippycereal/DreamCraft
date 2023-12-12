@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "dreamcraftmod:mistrium"
+    },
+    "H": {
+      "item": "minecraft:netherite_chestplate"
+    },
+    "M": {
+      "item": "dreamcraftmod:mistrium_block"
+    }
+  },
+  "pattern": [
+    "# #",
+    "MHM",
+    "###"
+  ],
+  "result": {
+    "item": "dreamcraftmod:mistium_chestplate"
+  },
+  "show_notification": true
+}

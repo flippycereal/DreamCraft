@@ -16,15 +16,37 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.PRIDE_ORE)
+                .add(ModBlocks.MISTRIUM_ORE)
+                .add(ModBlocks.THUNDER_ORE)
+                .add(ModBlocks.PRIDE_BLOCK)
+                .add(ModBlocks.MISTRIUM_BLOCK)
+                .add(ModBlocks.CLOUD_BLOCK)
+                .add(ModBlocks.THUNDER_CLOUD);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);
+
+
+
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.ECHO_BLOCK)
+                .add(ModBlocks.ECHO_BRICKS)
+                .add(ModBlocks.ECHO_PILLAR)
+                .add(ModBlocks.ECHO_BRICKS_SlAB)
+                .add(ModBlocks.ECHO_BRICKS_STAIRS)
+                .add(ModBlocks.ECHO_BRICKS_WALL);
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.ECHO_BLOCK)
+                .add(ModBlocks.ECHO_BRICKS)
+                .add(ModBlocks.ECHO_PILLAR)
+                .add(ModBlocks.ECHO_BRICKS_SlAB)
+                .add(ModBlocks.ECHO_BRICKS_STAIRS)
+                .add(ModBlocks.ECHO_BRICKS_WALL)
+                .add(ModBlocks.MISTRIUM_ORE)
+                .add(ModBlocks.THUNDER_ORE)
+                .add(ModBlocks.MISTRIUM_BLOCK)
                 .add(ModBlocks.PRIDE_ORE);
-
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.PRIDE_BLOCK);
-
-        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.PRIDE_ORE);
-
-
 
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .add(ModBlocks.WHITE_OAK_LOG)
@@ -36,11 +58,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_IVORY_WOOD)
                 .add(ModBlocks.PINK_IVORY_PLANKS);
 
-        getOrCreateTagBuilder(BlockTags.FENCES)
-                .add(ModBlocks.PINK_IVORY_FENCE);
+
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.PINK_IVORY_FENCE_GATE);
         getOrCreateTagBuilder(BlockTags.WALLS)
-                .add(ModBlocks.PINK_IVORY_WALL);
+                .add(ModBlocks.PINK_IVORY_WALL)
+                .add(ModBlocks.ECHO_BRICKS_WALL);
     }
 }

@@ -8,6 +8,7 @@ import net.minecraft.block.Block;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
@@ -23,10 +24,24 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.PRIDE_ORE, prideOreDrops(ModBlocks.PRIDE_ORE, ModItems.GAY_COMB));
+        addDrop(ModBlocks.PRIDE_ORE, multipleOreDrops(ModBlocks.PRIDE_ORE, ModItems.GAY_COMB));
+
+        addDrop(ModBlocks.MISTRIUM_ORE, multipleOreDrops(ModBlocks.MISTRIUM_ORE, ModItems.MISTRIUM));
+
+       addDrop(ModBlocks.THUNDER_ORE, multipleOreDrops(ModBlocks.THUNDER_ORE, ModItems.THUNDER));
 
         addDrop(ModBlocks.PRIDE_BLOCK);
+        addDrop(ModBlocks.MISTRIUM_BLOCK);
 
+        addDrop(ModBlocks.CLOUD_BLOCK);
+        addDrop(ModBlocks.THUNDER_CLOUD);
+
+        addDrop(ModBlocks.ECHO_BLOCK);
+        addDrop(ModBlocks.ECHO_BRICKS);
+        addDrop(ModBlocks.ECHO_BRICKS_SlAB);
+        addDrop(ModBlocks.ECHO_BRICKS_STAIRS);
+        addDrop(ModBlocks.ECHO_BRICKS_WALL);
+        addDrop(ModBlocks.ECHO_PILLAR);
 
         addDrop(ModBlocks.WHITE_OAK_LOG);
         addDrop(ModBlocks.WHITE_OAK_WOOD);
@@ -39,21 +54,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PINK_IVORY_PLANKS);
 
         addDrop(ModBlocks.PINK_IVORY_STAIRS);
-        addDrop(ModBlocks.PINK_IVORY_TRAPDOOR);
         addDrop(ModBlocks.PINK_IVORY_WALL);
-        addDrop(ModBlocks.PINK_IVORY_FENCE);
         addDrop(ModBlocks.PINK_IVORY_FENCE_GATE);
         addDrop(ModBlocks.PINK_IVORY_BUTTON);
         addDrop(ModBlocks.PINK_IVORY_PRESSURE_PLATE);
 
-        addDrop(ModBlocks.PINK_IVORY_DOOR, doorDrops(ModBlocks.PINK_IVORY_DOOR));
         addDrop(ModBlocks.PINK_IVORY_SlAB, slabDrops(ModBlocks.PINK_IVORY_SlAB));
 
-        addDrop(ModBlocks.WHITE_OAK_LEAVES, leavesDrops(ModBlocks.WHITE_OAK_LEAVES, ModBlocks.PRIDE_ORE, 0.005f)); // TODO
+        addDrop(ModBlocks.WHITE_OAK_LEAVES, leavesDrops(ModBlocks.WHITE_OAK_LEAVES, ModBlocks.WHITE_OAK_LEAVES, 0.005f)); // TODO
     }
 
 
-    public LootTable.Builder prideOreDrops(Block drop, Item item) {
+    public LootTable.Builder multipleOreDrops(Block drop, Item item) {
         return BlockLootTableGenerator.dropsWithSilkTouch(drop, (LootPoolEntry.Builder)this.applyExplosionDecay(drop,
                 ((LeafEntry.Builder)
                         ItemEntry.builder(item)

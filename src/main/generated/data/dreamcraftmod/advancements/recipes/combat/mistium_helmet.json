@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mistrium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dreamcraftmod:mistrium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:mistium_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mistrium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:mistium_helmet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

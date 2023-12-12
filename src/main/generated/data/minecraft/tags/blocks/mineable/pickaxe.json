@@ -2,6 +2,11 @@
   "replace": false,
   "values": [
     "dreamcraftmod:pride_ore",
-    "dreamcraftmod:pride_block"
+    "dreamcraftmod:mistrium_ore",
+    "dreamcraftmod:thunder_ore",
+    "dreamcraftmod:pride_block",
+    "dreamcraftmod:mistrium_block",
+    "dreamcraftmod:cloud_block",
+    "dreamcraftmod:thunder_cloud"
   ]
 }

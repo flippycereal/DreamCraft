@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "dreamcraftmod:echo_block",
+    "dreamcraftmod:echo_bricks",
+    "dreamcraftmod:echo_pillar",
+    "dreamcraftmod:echo_bricks_slab",
+    "dreamcraftmod:echo_bricks_stairs",
+    "dreamcraftmod:echo_bricks_wall"
+  ]
+}

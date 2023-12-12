@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "dreamcraftmod:handle"
+    },
+    "B": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "pattern": [
+    "B#B"
+  ],
+  "result": {
+    "item": "dreamcraftmod:shaft"
+  },
+  "show_notification": true
+}

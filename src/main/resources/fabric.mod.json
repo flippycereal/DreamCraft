@@ -32,5 +32,13 @@
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
-  }
+  },
+  "jars": [
+  {
+    "file": "META-INF/jars/cardinal-components-base-5.3.0.jar"
+  },
+    {
+      "file": "META-INF/jars/cardinal-components-entity-5.3.0.jar"
+    }
+    ]
 }

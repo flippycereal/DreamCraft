@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "dreamcraftmod:white_oak_log",
-    "dreamcraftmod:white_oak_wood",
-    "dreamcraftmod:stripped_white_oak_wood",
-    "dreamcraftmod:stripped_white_oak_log",
-    "dreamcraftmod:pink_ivory_log",
-    "dreamcraftmod:pink_ivory_wood"
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air",
+    "minecraft:air"
   ]
 }

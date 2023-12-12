@@ -4,9 +4,40 @@
   "item.dreamcraftmod.gay_comb": "Gay Comb",
   "item.dreamcraftmod.handle": "Handle",
   "item.dreamcraftmod.pride_scythe": "Pride Scythe",
+  "item.dreamcraftmod.echo_glaive": "Echo Glaive",
+  "item.dreamcraftmod.echo_axe": "Echo Axe",
+
+  "item.dreamcraftmod.thunder_shovel": "Sprite Shovel",
+  "item.dreamcraftmod.thunder_pickaxe": "Sprite Pickaxe",
+  "item.dreamcraftmod.thunder_axe": "Sprite Axe",
+  "item.dreamcraftmod.thunder_hoe": "Sprite Hoe",
+
+  "item.dreamcraftmod.echo_blade": "Echo Blade",
+  "item.dreamcraftmod.shaft": "Shaft",
 
   "block.dreamcraftmod.pride_ore": "Pride Ore",
   "block.dreamcraftmod.pride_block": "Pride Block",
+  "block.dreamcraftmod.cloud_block": "Cloud Block",
+
+  "block.dreamcraftmod.mistrium_ore": "Mistrium Ore",
+  "block.dreamcraftmod.mistrium_block": "Mistrium Block",
+  "item.dreamcraftmod.mistrium": "Mistrium",
+
+  "block.dreamcraftmod.thunder_cloud": "Thunder Cloud",
+  "block.dreamcraftmod.thunder_ore":  "Sprite Ore",
+  "item.dreamcraftmod.thunder": "Sprite",
+
+  "block.dreamcraftmod.echo_block": "Echo Block",
+  "block.dreamcraftmod.echo_bricks": "Echo Bricks",
+  "block.dreamcraftmod.echo_bricks_stairs": "Echo Brick Stairs",
+  "block.dreamcraftmod.echo_bricks_slab": "Echo Brick Slab",
+  "block.dreamcraftmod.echo_bricks_wall": "Echo Brick Wall",
+  "block.dreamcraftmod.echo_pillar": "Echo Pillar",
+
+  "item.dreamcraftmod.mistium_helmet": "Mistrium Helmet",
+  "item.dreamcraftmod.mistium_chestplate": "Mistrium Chestplate",
+  "item.dreamcraftmod.mistium_leggings": "Mistrium Leggings",
+  "item.dreamcraftmod.mistium_boots": "Mistrium Boots",
 
 
   "block.dreamcraftmod.white_oak_log": "White Oak Log",
@@ -29,6 +60,13 @@
   "block.dreamcraftmod.pink_ivory_wall": "Pink Ivory Wall",
   "block.dreamcraftmod.pink_ivory_door": "Pink Ivory Door",
   "block.dreamcraftmod.pink_ivory_trapdoor": "Pink Ivory Trapdoor",
+
+  "enchantment.dreamcraftmod.frostbite": "Frostbite",
+  "enchantment.dreamcraftmod.leech": "Leech",
+  "enchantment.dreamcraftmod.abduction": "Abduction",
+  "enchantment.dreamcraftmod.thunder_striker": "Thunder Striker",
+  "enchantment.dreamcraftmod.toxic": "Toxic",
+  "enchantment.dreamcraftmod.melding": "Melding",
 
   "itemgroup.dreamcraft": "DreamCraft"
 }

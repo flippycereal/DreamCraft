@@ -17,8 +17,8 @@ public class SandSwordItem extends SwordItem {
         if (!attacker.getWorld().isClient && attacker.getEquippedStack(EquipmentSlot.MAINHAND).isOf(this)) {
             target.takeKnockback(20, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
 
-            if (target == attacker) {
-                (target).addVelocity(20, 0.5f, 0.5f);
+            if (target instanceof PlayerEntity) {
+                (target).takeKnockback(10, attacker.getX() - target.getX(), attacker.getZ() - target.getZ());
             }
         }
         return super.postHit(stack, target, attacker);

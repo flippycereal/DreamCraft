@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:echo_shard"
+    },
+    "D": {
+      "item": "minecraft:gold_block"
+    },
+    "G": {
+      "item": "dreamcraftmod:shaft"
+    },
+    "S": {
+      "item": "minecraft:netherite_sword"
+    }
+  },
+  "pattern": [
+    " #S",
+    "DG#",
+    "GD "
+  ],
+  "result": {
+    "item": "dreamcraftmod:echo_blade"
+  },
+  "show_notification": true
+}
