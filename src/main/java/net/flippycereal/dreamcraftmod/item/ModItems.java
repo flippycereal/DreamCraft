@@ -43,8 +43,6 @@ public class ModItems {
     public static final Item THUNDER = registerItem("thunder",
             new Item(new FabricItemSettings().rarity(Rarity.UNCOMMON)));
 
-
-
     public static final Item MISTRIUM_HELMET = registerItem("mistium_helmet",
             new ArmorItem(ModArmorMaterial.MISTIUM, ArmorItem.Type.HELMET, new FabricItemSettings().rarity(Rarity.RARE)));
     public static final Item MISTRIUM_CHESTPLATE = registerItem("mistium_chestplate",

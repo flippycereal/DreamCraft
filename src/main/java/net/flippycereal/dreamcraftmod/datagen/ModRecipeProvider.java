@@ -63,17 +63,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.ECHO_BLADE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ECHO_AXE, 1)
-                .pattern("ZS#")
-                .pattern(" D#")
-                .pattern("G  ")
-                .input('#', ModBlocks.ECHO_BLOCK)
-                .input('G', ModItems.SHAFT)
-                .input('D', Items.BLAZE_ROD)
-                .input('S', Items.NETHERITE_INGOT)
-                .input('Z', Items.GOLD_BLOCK)
-                .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ECHO_AXE)));
+//        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.ECHO_AXE, 1)
+//                .pattern("ZS#")
+//                .pattern(" D#")
+//                .pattern("G  ")
+//                .input('#', ModBlocks.ECHO_BLOCK)
+//                .input('G', ModItems.SHAFT)
+//                .input('D', Items.BLAZE_ROD)
+//                .input('S', Items.NETHERITE_INGOT)
+//                .input('Z', Items.GOLD_BLOCK)
+//                .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
+//                .offerTo(exporter, new Identifier(getRecipeName(ModItems.ECHO_AXE)));
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PRIDE_BLOCK, 1)
@@ -107,7 +107,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.DEEPSLATE), conditionsFromItem(Items.DEEPSLATE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.SHAFT)));
 
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.PRIDE_SCYTHE, 1)
                 .pattern("B##")
                 .pattern(" H#")
@@ -128,7 +127,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('H', Items.NETHERITE_HELMET)
                 .criterion(hasItem(ModItems.MISTRIUM), conditionsFromItem(ModItems.MISTRIUM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MISTRIUM_HELMET)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MISTRIUM_CHESTPLATE, 1)
                 .pattern("# #")
                 .pattern("MHM")
@@ -138,7 +136,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('H', Items.NETHERITE_CHESTPLATE)
                 .criterion(hasItem(ModItems.MISTRIUM), conditionsFromItem(ModItems.MISTRIUM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MISTRIUM_CHESTPLATE)));
-///
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MISTIUM_LEGGINGS, 1)
                 .pattern("MHM")
                 .pattern("# #")
@@ -148,7 +145,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('H', Items.NETHERITE_LEGGINGS)
                 .criterion(hasItem(ModItems.MISTRIUM), conditionsFromItem(ModItems.MISTRIUM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MISTIUM_LEGGINGS)));
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.MISTIUM_BOOTS, 1)
                 .pattern("   ")
                 .pattern("# #")

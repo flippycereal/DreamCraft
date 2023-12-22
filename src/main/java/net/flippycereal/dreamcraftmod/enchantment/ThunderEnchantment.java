@@ -33,6 +33,7 @@ public class ThunderEnchantment extends Enchantment {
         return super.canAccept(other) && other != Enchantments.FIRE_ASPECT
                 && other != ModEnchantments.LEECH
                 && other != ModEnchantments.FROSTBITE
-                && other != ModEnchantments.TOXIC;
+                && other != ModEnchantments.TOXIC
+                && other != ModEnchantments.ABDUCTION;
     }
 }

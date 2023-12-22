@@ -41,6 +41,7 @@ public class LeechEnchantment extends Enchantment {
         return super.canAccept(other) && other != Enchantments.FIRE_ASPECT
                 && other != ModEnchantments.TOXIC
                 && other != ModEnchantments.FROSTBITE
-                && other != ModEnchantments.THUNDER_STRIKER;
+                && other != ModEnchantments.THUNDER_STRIKER
+                && other != ModEnchantments.ABDUCTION;
     }
 }

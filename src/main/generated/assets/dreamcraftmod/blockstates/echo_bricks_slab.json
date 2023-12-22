@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "dreamcraftmod:block/echo_bricks_slab"
+    },
+    "type=double": {
+      "model": "dreamcraftmod:block/echo_bricks"
+    },
+    "type=top": {
+      "model": "dreamcraftmod:block/echo_bricks_slab_top"
+    }
+  }
+}

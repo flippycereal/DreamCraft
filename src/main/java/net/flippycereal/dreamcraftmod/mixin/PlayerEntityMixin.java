@@ -1,7 +1,10 @@
 package net.flippycereal.dreamcraftmod.mixin;
 
+import net.flippycereal.dreamcraftmod.enchantment.ModEnchantments;
 import net.flippycereal.dreamcraftmod.item.ModItems;
 import net.flippycereal.dreamcraftmod.particle.ModParticles;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,7 +14,9 @@ import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin({PlayerEntity.class})
 public abstract class PlayerEntityMixin extends LivingEntity {
@@ -19,14 +24,17 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         super(entityType, world);
     }
 
-    @ModifyArg(
-            method = {"spawnSweepAttackParticles"},
-            at = @At(
+    @Inject(
+            method = {"attack"},
+            at = {@At(
                     value = "INVOKE",
-                    target = "Lnet/minecraft/server/world/ServerWorld;spawnParticles(Lnet/minecraft/particle/ParticleEffect;DDDIDDDD)I"
-            )
+                    target = "Lnet/minecraft/entity/player/PlayerEntity;addCritParticles(Lnet/minecraft/entity/Entity;)V"
+            )}
     )
-    private <T extends ParticleEffect> T dreamcraft$disableSweepingHack(T value) {
-        return this.getStackInHand(Hand.MAIN_HAND).getItem() == ModItems.ECHO_LONGSWORD ? (T) ModParticles.ECHO_SWEEP_ATTACK : value;
+    private void attack(Entity target, CallbackInfo ci) {
+        if (EnchantmentHelper.getEquipmentLevel(ModEnchantments.ABDUCTION, this) > 0) {
+            target.setVelocity(this.getPos().subtract(target.getPos()).multiply(0.25));
+            target.velocityModified = true;
+        }
     }
 }

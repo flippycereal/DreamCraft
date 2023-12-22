@@ -34,7 +34,8 @@ public class FrostbiteEnchantment extends Enchantment {
         return super.canAccept(other) && other != Enchantments.FIRE_ASPECT
                 && other != ModEnchantments.LEECH
                 && other != ModEnchantments.TOXIC
-                && other != ModEnchantments.THUNDER_STRIKER;
+                && other != ModEnchantments.THUNDER_STRIKER
+                && other != ModEnchantments.ABDUCTION;
     }
 
     @Override

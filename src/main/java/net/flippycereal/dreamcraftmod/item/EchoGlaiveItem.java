@@ -9,6 +9,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
@@ -67,18 +68,20 @@ public class EchoGlaiveItem extends SwordItem {
 
 //    @Override
 //    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-//        Entity origin = user;
-//        int radius = 4;
-//        Box box = new Box(new Vec3d(origin.getX() - radius, origin.getY() - radius, origin.getZ() - radius),
-//                new Vec3d(origin.getX() + radius, origin.getY() + radius, origin.getZ() + radius));
-//        List<LivingEntity> possibleEntities = world.getEntitiesByClass(LivingEntity.class, box, livingEntity -> {
-//            if (!(livingEntity instanceof PlayerEntity player)) return true;
-//            return !player.getAbilities().creativeMode && !player.isSpectator();
-//        });
+//        if (!world.isClient) { // Make sure this runs on the server side
+//            user.getItemCooldownManager().set(this, 120);
+//            // Create a bounding box around the player
+//            Box box = user.getBoundingBox().expand(5.0, 5.0, 5.0); // Expand method grows the box in every direction by the specified amount
 //
-//        user.getItemCooldownManager().set(this, 120);
-//        world.getEntitiesByClass(Entity.class, box,1);
+//            List<Entity> entities = world.getOtherEntities(user, box); // getOtherEntities excludes the specified entity (in this case, player)
 //
-//        return TypedActionResult.success(user.getStackInHand(hand));
+//
+//            for(Entity entity : entities){
+//                System.out.println("Entity name: " + entity.getEntityName());
+//                System.out.println("Entity position: " + entity.getBlockPos().toString());
+//                entity.getPos().subtract(user.getPos()).normalize().multiply(5).add(entity.getPos());
+//            }
+//        }
+//        return super.use(world, user, hand);
 //    }
 }

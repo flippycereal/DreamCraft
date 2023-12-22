@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "dreamcraftmod:block/echo_bricks"
+  }
+}
