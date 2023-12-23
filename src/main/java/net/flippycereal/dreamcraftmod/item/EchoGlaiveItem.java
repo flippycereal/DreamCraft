@@ -9,6 +9,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.decoration.ItemFrameEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -24,6 +25,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.EntityView;
 import net.minecraft.world.World;
 
+import java.util.Iterator;
 import java.util.List;
 
 public class EchoGlaiveItem extends SwordItem {
@@ -66,15 +68,33 @@ public class EchoGlaiveItem extends SwordItem {
         }
     }
 
-//    @Override
-//    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-//        if (!world.isClient) { // Make sure this runs on the server side
-//            user.getItemCooldownManager().set(this, 120);
-//            // Create a bounding box around the player
-//            Box box = user.getBoundingBox().expand(5.0, 5.0, 5.0); // Expand method grows the box in every direction by the specified amount
-//
-//            List<Entity> entities = world.getOtherEntities(user, box); // getOtherEntities excludes the specified entity (in this case, player)
-//
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        if (!world.isClient) { // Make sure this runs on the server side
+            user.getItemCooldownManager().set(this, 120);
+
+            // Create a bounding box around the player
+            Box box = user.getBoundingBox().expand(5.0, 5.0, 5.0); // Expand method grows the box in every direction by the specified amount
+
+            List<Entity> entities = world.getOtherEntities(user, box); // getOtherEntities excludes the specified entity (in this case, player)
+
+            if (!entities.isEmpty()) {
+                Iterator<Entity> iterator = entities.iterator();
+                while (iterator.hasNext()) {
+                    Entity entityCollided = iterator.next();
+                    if (!entityCollided.isImmuneToExplosion() && !(entityCollided instanceof ItemFrameEntity)) {
+                        double xVel = entityCollided.getX() - user.getX();
+                        double yVel = entityCollided.getY() - user.getY();
+                        double zVel = entityCollided.getZ() - user.getZ();
+                        double velScale = 3 / Math.sqrt(xVel * xVel + yVel * yVel + zVel * zVel);
+                        entityCollided.addVelocity(velScale*xVel, velScale*yVel, velScale*zVel);
+                        entityCollided.velocityModified = true;
+                    }
+                }
+            }
+        }
+        return super.use(world, user, hand);
+    }
 //
 //            for(Entity entity : entities){
 //                System.out.println("Entity name: " + entity.getEntityName());
