@@ -56,6 +56,8 @@ public class ModBlocks {
 
     public static final Block WHITE_OAK_PLANKS = registerBlock("white_oak_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
+    public static final Block WHITE_OAK_STAIRS = registerBlock("white_oak_stairs",
+            new StairsBlock(ModBlocks.WHITE_OAK_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.CRIMSON_PLANKS).strength(4f)));
     public static final Block WHITE_OAK_LEAVES = registerBlock("white_oak_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4f).nonOpaque()));
 

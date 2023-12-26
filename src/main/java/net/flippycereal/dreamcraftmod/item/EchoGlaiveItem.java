@@ -3,6 +3,7 @@ package net.flippycereal.dreamcraftmod.item;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
+import net.flippycereal.dreamcraftmod.particle.ModParticles;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -16,6 +17,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.item.ToolMaterials;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
@@ -27,6 +29,7 @@ import net.minecraft.world.World;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 public class EchoGlaiveItem extends SwordItem {
 
@@ -78,6 +81,7 @@ public class EchoGlaiveItem extends SwordItem {
 
             List<Entity> entities = world.getOtherEntities(user, box); // getOtherEntities excludes the specified entity (in this case, player)
 
+
             if (!entities.isEmpty()) {
                 Iterator<Entity> iterator = entities.iterator();
                 while (iterator.hasNext()) {
@@ -89,6 +93,7 @@ public class EchoGlaiveItem extends SwordItem {
                         double velScale = 3 / Math.sqrt(xVel * xVel + yVel * yVel + zVel * zVel);
                         entityCollided.addVelocity(velScale*xVel, velScale*yVel, velScale*zVel);
                         entityCollided.velocityModified = true;
+                        world.addParticle(ModParticles.SHOCKWAVE_PARTICLE, user.getX(), user.getY(), user.getZ(), 0.0, 0.0, 0.0);
                     }
                 }
             }

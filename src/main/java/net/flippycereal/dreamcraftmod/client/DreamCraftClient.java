@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.flippycereal.dreamcraftmod.block.ModBlocks;
 import net.flippycereal.dreamcraftmod.particle.ModParticles;
 import net.flippycereal.dreamcraftmod.particle.custom.EchoSweepParticle;
+import net.flippycereal.dreamcraftmod.particle.custom.ShockwaveParticle;
 import net.minecraft.client.render.RenderLayer;
 
 public class DreamCraftClient implements ClientModInitializer {
@@ -16,5 +17,7 @@ public class DreamCraftClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WHITE_OAK_LEAVES, RenderLayer.getCutout());
+
+        ParticleFactoryRegistry.getInstance().register(ModParticles.SHOCKWAVE_PARTICLE, ShockwaveParticle.Factory::new);
     }
 }

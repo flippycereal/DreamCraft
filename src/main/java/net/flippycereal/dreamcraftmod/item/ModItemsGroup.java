@@ -60,6 +60,7 @@ public class ModItemsGroup {
                         entries.add(ModBlocks.STRIPPED_WHITE_OAK_WOOD);
                         entries.add(ModBlocks.WHITE_OAK_LEAVES);
                         entries.add(ModBlocks.WHITE_OAK_PLANKS);
+                        entries.add(ModBlocks.WHITE_OAK_STAIRS);
 
                         entries.add(ModBlocks.PINK_IVORY_LOG);
                         entries.add(ModBlocks.PINK_IVORY_WOOD);

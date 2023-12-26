@@ -27,10 +27,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CLOUD_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.THUNDER_CLOUD);
 
+        BlockStateModelGenerator.BlockTexturePool whiteOakPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WHITE_OAK_PLANKS);
         blockStateModelGenerator.registerLog(ModBlocks.WHITE_OAK_LOG).log(ModBlocks.WHITE_OAK_LOG).wood(ModBlocks.WHITE_OAK_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_WHITE_OAK_LOG).log(ModBlocks.STRIPPED_WHITE_OAK_LOG).wood(ModBlocks.STRIPPED_WHITE_OAK_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_OAK_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_OAK_LEAVES);
+        whiteOakPool.stairs(ModBlocks.WHITE_OAK_STAIRS);
 
         BlockStateModelGenerator.BlockTexturePool echoBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ECHO_BRICKS);
         echoBrickPool.wall(ModBlocks.ECHO_BRICKS_WALL);

@@ -198,5 +198,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.ECHO_BRICKS, Ingredient.ofItems(ModBlocks.ECHO_BRICKS)).criterion(hasItem(ModBlocks.ECHO_BRICKS), conditionsFromItem(ModBlocks.ECHO_BRICKS)).offerTo(exporter);
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ECHO_BRICKS_SlAB, ModBlocks.ECHO_BRICKS);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ECHO_BRICKS_WALL, ModBlocks.ECHO_BRICKS);
+
+        createStairsRecipe(ModBlocks.WHITE_OAK_STAIRS, Ingredient.ofItems(ModBlocks.WHITE_OAK_PLANKS)).criterion(hasItem(ModBlocks.WHITE_OAK_PLANKS), conditionsFromItem(ModBlocks.WHITE_OAK_PLANKS)).offerTo(exporter);
     }
 }

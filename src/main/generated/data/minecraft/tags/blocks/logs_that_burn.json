@@ -1,12 +1,13 @@
 {
   "replace": false,
   "values": [
-    "dreamcraft:white_oak_log",
-    "dreamcraft:white_oak_wood",
-    "dreamcraft:stripped_white_oak_wood",
-    "dreamcraft:stripped_white_oak_log",
-    "dreamcraft:pink_ivory_log",
-    "dreamcraft:pink_ivory_wood",
-    "dreamcraft:pink_ivory_planks"
+    "dreamcraftmod:white_oak_log",
+    "dreamcraftmod:white_oak_wood",
+    "dreamcraftmod:stripped_white_oak_wood",
+    "dreamcraftmod:stripped_white_oak_log",
+    "dreamcraftmod:white_oak_stairs",
+    "dreamcraftmod:pink_ivory_log",
+    "dreamcraftmod:pink_ivory_wood",
+    "dreamcraftmod:pink_ivory_planks"
   ]
 }

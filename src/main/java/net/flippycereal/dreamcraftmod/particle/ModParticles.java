@@ -9,9 +9,12 @@ import net.minecraft.util.Identifier;
 
 public class ModParticles {
     public static final DefaultParticleType ECHO_SWEEP_ATTACK = FabricParticleTypes.simple();
+    public static final DefaultParticleType SHOCKWAVE_PARTICLE = FabricParticleTypes.simple();
 
     public static void registerParticles() {
         Registry.register(Registries.PARTICLE_TYPE, new Identifier(DreamCraft.MOD_ID, "echo_sweep_attack"),
                 ECHO_SWEEP_ATTACK);
+        Registry.register(Registries.PARTICLE_TYPE, new Identifier(DreamCraft.MOD_ID, "shockwave_particle"),
+                SHOCKWAVE_PARTICLE);
     }
 }

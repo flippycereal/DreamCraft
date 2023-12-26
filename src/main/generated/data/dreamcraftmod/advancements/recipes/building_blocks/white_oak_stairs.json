@@ -1,34 +1,34 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_echo_shard": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "dreamcraftmod:white_oak_stairs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_oak_planks": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:echo_shard"
+              "dreamcraftmod:white_oak_planks"
             ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "minecraft:echo_axe"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_the_recipe",
-      "has_echo_shard"
+      "has_white_oak_planks"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:echo_axe"
+      "dreamcraftmod:white_oak_stairs"
     ]
   },
   "sends_telemetry_event": false

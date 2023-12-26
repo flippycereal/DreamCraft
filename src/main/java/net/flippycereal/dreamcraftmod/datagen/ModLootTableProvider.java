@@ -48,6 +48,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_WHITE_OAK_LOG);
         addDrop(ModBlocks.STRIPPED_WHITE_OAK_WOOD);
         addDrop(ModBlocks.WHITE_OAK_PLANKS);
+        addDrop(ModBlocks.WHITE_OAK_STAIRS);
 
         addDrop(ModBlocks.PINK_IVORY_LOG);
         addDrop(ModBlocks.PINK_IVORY_WOOD);

@@ -27,8 +27,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);
 
 
-
-
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
                 .add(ModBlocks.ECHO_BLOCK)
                 .add(ModBlocks.ECHO_BRICKS)
@@ -53,6 +51,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.WHITE_OAK_WOOD)
                 .add(ModBlocks.STRIPPED_WHITE_OAK_WOOD)
                 .add(ModBlocks.STRIPPED_WHITE_OAK_LOG)
+                .add(ModBlocks.WHITE_OAK_STAIRS)
 
                 .add(ModBlocks.PINK_IVORY_LOG)
                 .add(ModBlocks.PINK_IVORY_WOOD)

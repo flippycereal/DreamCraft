@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-10T02:10:59.4325344	DreamCraft/Block Loot Tables
+// 1.20.2	2023-12-26T14:50:11.6247567	DreamCraft/Block Loot Tables
 31fe4cc68391050583e47f9a8a1fb6521a85f785 data\dreamcraftmod\loot_tables\blocks\mistrium_block.json
 15dc400338903f1f0f70e767d9681be985f23c1f data\dreamcraftmod\loot_tables\blocks\echo_bricks_wall.json
 f2c0361bf2e8e444f898da03798900b9ae1a347f data\dreamcraftmod\loot_tables\blocks\white_oak_log.json
@@ -8,6 +8,7 @@ f2c0361bf2e8e444f898da03798900b9ae1a347f data\dreamcraftmod\loot_tables\blocks\w
 78a972c3ca1bb1cbed07f778455501f44a497659 data\dreamcraftmod\loot_tables\blocks\white_oak_wood.json
 e0b59e56581b6ddcb00c948749301e88ced13933 data\dreamcraftmod\loot_tables\blocks\stripped_white_oak_log.json
 68f5bba2a3748ba14eee879ac6ec4d66a8349395 data\dreamcraftmod\loot_tables\blocks\echo_pillar.json
+bc4dfcc068053a2fc5ab9b47ee0154b71bc62451 data\dreamcraftmod\loot_tables\blocks\white_oak_stairs.json
 8a0a510b68fcb191ca76105e94c266e83a875439 data\dreamcraftmod\loot_tables\blocks\thunder_ore.json
 428b5e92eb6afc138f5ccdc7c01620c5bf019eb0 data\dreamcraftmod\loot_tables\blocks\echo_bricks_stairs.json
 9db1b16a816a966bde69a5e197912801c25aece7 data\dreamcraftmod\loot_tables\blocks\pink_ivory_planks.json

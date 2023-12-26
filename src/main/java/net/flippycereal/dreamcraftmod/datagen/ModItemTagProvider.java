@@ -26,6 +26,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModBlocks.WHITE_OAK_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_WHITE_OAK_WOOD.asItem())
                 .add(ModBlocks.STRIPPED_WHITE_OAK_LOG.asItem())
+                .add(ModBlocks.WHITE_OAK_STAIRS.asItem())
 
                 .add(ModBlocks.PINK_IVORY_LOG.asItem())
                 .add(ModBlocks.PINK_IVORY_WOOD.asItem());
