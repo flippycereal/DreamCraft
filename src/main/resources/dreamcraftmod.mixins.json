@@ -7,7 +7,6 @@
     "LongswordRendererMixin",
     "BipedEntityModelMixin",
     "LivingEntityMixin",
-    "BlockMixin",
     "PlayerEntityMixin"
   ],
   "client": [

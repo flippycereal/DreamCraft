@@ -25,9 +25,6 @@ public class ModEnchantments {
     public static Enchantment ABDUCTION = register("abduction",
             new AbductionEnchantment(Enchantment.Rarity.VERY_RARE,
                    EnchantmentTarget.WEAPON, EquipmentSlot.MAINHAND));
-    public static Enchantment MELDING = register("melding",
-            new MeldingEnchantment(Enchantment.Rarity.RARE,
-                    EquipmentSlot.MAINHAND));
 
 
 

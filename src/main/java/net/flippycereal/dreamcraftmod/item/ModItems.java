@@ -13,13 +13,13 @@ public class ModItems {
     public static final Item SAND_SWORD = registerItem("sand_sword",
             new SandSwordItem(ToolMaterials.WOOD, 0, -2, new FabricItemSettings()));
     public static final Item ECHO_LONGSWORD = registerItem("echo_longsword",
-            new EchoLongswordItem(ToolMaterials.NETHERITE, 4, -2.75f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC).maxCount(1).maxDamage(-1)));
+            new EchoLongswordItem(ToolMaterials.NETHERITE, 4, -2.75f, new FabricItemSettings().fireproof().rarity(Rarity.EPIC).maxDamage(-1)));
     public static final Item ECHO_AXE = registerItem("echo_axe",
-            new EchoAxeItem(ToolMaterials.NETHERITE, 6, -3F, new FabricItemSettings().fireproof().rarity(Rarity.EPIC).maxCount(1).maxDamage(-1)));
+            new EchoAxeItem(ToolMaterials.NETHERITE, 6, -3F, new FabricItemSettings().fireproof().rarity(Rarity.EPIC).maxDamage(-1)));
     public static final Item PRIDE_SCYTHE = registerItem("pride_scythe",
             new PrideScytheItem(ToolMaterials.GOLD, 6, -2.4f, new FabricItemSettings().maxDamage(2031).rarity(Rarity.RARE)));
     public static final Item ECHO_GLAIVE = registerItem("echo_glaive",
-            new EchoGlaiveItem(ToolMaterials.NETHERITE, 1, -1f, new FabricItemSettings().maxDamage(-1).maxCount(1).fireproof().rarity(Rarity.EPIC)));
+            new EchoGlaiveItem(ToolMaterials.NETHERITE, 1, -1.75f, new FabricItemSettings().maxDamage(-1).fireproof().rarity(Rarity.EPIC)));
     public static final Item ECHO_BLADE = registerItem("echo_blade",
             new AxeItem(ToolMaterials.IRON, 2, 0, new FabricItemSettings().rarity(Rarity.RARE).maxCount(1)));
 
